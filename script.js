@@ -1,5 +1,6 @@
 const displayInput = document.getElementById("display-input");
 const digits = document.querySelectorAll(".digit");
+const allClear = document.getElementById("all-clear");
 const clear = document.getElementById("clear");
 const equal = document.getElementById("equal");
 
@@ -20,4 +21,8 @@ clear.addEventListener("click", function () {
   let clearString = displayString.slice(0, -1);
 
   displayInput.value = clearString;
+});
+
+allClear.addEventListener("click", function () {
+  displayInput.value = "";
 });
