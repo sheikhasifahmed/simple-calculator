@@ -15,7 +15,7 @@ for (const digit of digits) {
 equal.addEventListener("click", function () {
   try {
     let cal = eval(displayInput.value).toFixed(5);
-    displayInput.value = cal;
+    displayInput.value = parseFloat(cal);
   } catch (e) {
     displayInput.value = "Error";
   }
